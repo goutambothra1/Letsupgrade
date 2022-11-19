@@ -1,0 +1,85 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+        int a,b;
+        cout<<"enter two values";
+        cin>>a>>b;
+        //comparing two values using comparison operator
+        if(a<b)//greater than
+        {
+            cout<<"a is smallest\n";
+        }
+        else
+        {
+            cout<<"b is smallest\n";
+        }
+        if(a==b)//equal to
+        {
+
+            cout<<" a and b are equal\n";
+        }
+        else{
+            cout<<"both values are not equal\n";
+        }
+        if(a<=b)//less than equal to
+            cout<<"a is smallest or equal to b\n";
+        if(b>=a)//greater than equal to
+        {
+            cout<<"b is greater or equal to a\n";
+        }
+        if(a!=0)//not equal to
+        {
+            cout<<"a is non zero\n";
+        }
+        else{
+            cout<<"a is zero\n";
+        }
+        if(b!=0)//not equal to
+        {
+            cout<<"b is non zero\n";
+        }
+        else{
+            cout<<"b is zero\n";
+        }
+        cout<<"using logical operators finding smallest number among three number\n";
+        int c;
+        cout<<"enter third value\n";
+        cin>>c;
+        if(a<b&&a<c)//logical and operator
+        {
+           cout<<"a is smallest\n";
+
+        }
+        else if(b<a&&b<c)//logical operator
+        {
+            cout<<"b is smallest\n";
+
+        }
+        else
+        {
+            cout<<"c is smallest\n";
+        }
+            cout<<"using logical not check number is zero or non zero";
+        if (!c == 0)//logical not
+            cout << "You typed a number other than 0";
+        else
+            cout << "You typed zero\n";
+            cout<<"using logical || or\n";
+        if (a == b || a>b)
+            cout << "a equals to b OR a is greater than b\n";
+        else
+            cout << "Neither a is equal to b nor a is greater than b\n";
+
+
+            cout<<"perform arithmatic operation\n";
+        // perform arithmatic operation
+            cout<<"arithmatic Operation:\t"<<a+b<<endl;
+            cout<<"subtraction Operation:\t"<<a-b<<endl;
+            cout<<"multiplication Operation:\t"<<a*b<<endl;
+            cout<<"division Operation:\t"<<a/b<<endl;
+            cout<<"remainder Operation:\t"<<a%b<<endl;
+        return 0;
+}
+
